@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/card_background"
+    android:elevation="6dp">
+
+    <!-- College Name -->
+    <TextView
+        android:id="@+id/tv_college_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingBottom="6dp" />
+
+    <!-- Cutoff & Category -->
+    <TextView
+        android:id="@+id/tv_college_cutoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cutoff: 90% | Category: Open"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
+
+</LinearLayout>

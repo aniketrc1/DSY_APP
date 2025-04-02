@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:layout_margin="8dp">
+
+    <!-- College Name (Clickable) -->
+    <TextView
+        android:id="@+id/tvCollegeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="College Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:paddingBottom="6dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:background="?attr/selectableItemBackground"
+        android:gravity="center_vertical" />
+
+    <!-- DTE Code -->
+    <TextView
+        android:id="@+id/tvDteCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DTE Code"
+        android:textSize="16sp"
+        android:textColor="@color/light_gray"
+        android:gravity="start"
+        android:paddingTop="4dp"/>
+
+</LinearLayout>

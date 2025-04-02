@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">APP</string>
+    <string name="enter_email">Enter Email</string>
+    <string name="hello">hello</string>
+    <string name="home">home</string>
+    <string name="collage">collage</string>
+    <string name="profile">Profile</string>
+
+        <string name="app_logo">App Logo</string>
+        <string name="welcome_back">Welcome Back!</string>
+        <string name="email">Email</string>
+        <string name="password">Password</string>
+        <string name="remember_me">Remember me</string>
+        <string name="login">Login</string>
+        <string name="sign_up_prompt">Don\'t have an account? Sign Up</string>
+
+
+</resources>

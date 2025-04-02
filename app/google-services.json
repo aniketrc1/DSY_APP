@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "38397228920",
+    "project_id": "dsy-2025",
+    "storage_bucket": "dsy-2025.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:38397228920:android:bc09169f48255852157a8d",
+        "android_client_info": {
+          "package_name": "com.example.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoQcqbVoOn1m4BlKou3V1sMlpwRdAG3rA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

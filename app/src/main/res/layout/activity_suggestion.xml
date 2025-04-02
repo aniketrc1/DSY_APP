@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Enter Percentage -->
+    <EditText
+        android:id="@+id/et_percentage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Percentage"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_border"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Course Name Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Name"
+        android:textSize="16sp"
+        android:padding="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_course"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Place Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place"
+        android:textSize="16sp"
+        android:padding="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_place"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Caste Spinner -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caste"
+        android:textSize="16sp"
+        android:padding="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_caste"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- College Status Spinner -->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="College Status"-->
+<!--        android:textSize="16sp"-->
+<!--        android:padding="4dp" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner_college_status"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:spinnerMode="dropdown" />-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp" />
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:padding="12dp" />
+
+</LinearLayout>
