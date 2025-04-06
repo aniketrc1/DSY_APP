@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
+public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
 
     private ArrayList<PDFItem> pdfList;
     private AppCompatActivity context;
@@ -34,7 +34,7 @@ class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.PDFViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull PDFViewHolder holder, int position) {
         PDFItem item = pdfList.get(position);
-        holder.pdfName.setText(item.getName());
+        holder.pdfName.setText(item.getTitle());
 
         holder.downloadButton.setOnClickListener(v -> {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(item.getUrl()));

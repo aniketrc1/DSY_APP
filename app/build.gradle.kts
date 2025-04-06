@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.app"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.app"
@@ -30,6 +30,7 @@ android {
 }
 
 dependencies {
+    implementation ("androidx.activity:activity:1.9.0")
     implementation ("com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1")
     implementation ("com.google.android.gms:play-services-base:18.3.0")
     implementation ("com.google.firebase:firebase-database:20.2.1")
@@ -40,6 +41,7 @@ dependencies {
     implementation ("androidx.room:room-runtime:2.5.0")
     implementation("com.google.firebase:firebase-firestore:25.1.1")
     implementation("com.google.firebase:firebase-inappmessaging:21.0.2")
+    implementation("androidx.activity:activity:1.10.1")
     annotationProcessor ("androidx.room:room-compiler:2.5.0")
 
     implementation("androidx.appcompat:appcompat:1.6.1")

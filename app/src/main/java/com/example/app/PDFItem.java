@@ -1,23 +1,30 @@
 package com.example.app;
 
-class PDFItem {
-    private String name;
+public class PDFItem {
+    private String title;
     private String url;
 
-    public PDFItem() {
-        // Default constructor required for Firebase
-    }
+    // Required for Firebase
+    public PDFItem() {}
 
-    public PDFItem(String name, String url) {
-        this.name = name;
+    public PDFItem(String title, String url) {
+        this.title = title;
         this.url = url;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getUrl() {
         return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#F9F9F9">
+
+    <!-- Logout Button aligned to the end -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:backgroundTint="#FF6B6B"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Admin Dashboard"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Buttons -->
+    <Button
+        android:id="@+id/add_pdf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add PDF"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/add_cutoff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Cutoff Data"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/add_scholarship"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Scholarship Data"
+        android:backgroundTint="#FFC107"
+        android:textColor="#000000"/>
+</LinearLayout>

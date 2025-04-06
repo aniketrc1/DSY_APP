@@ -1,7 +1,6 @@
 package com.example.app;
 
 import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -34,17 +33,19 @@ public class cutoff extends AppCompatActivity {
         adapter = new PDFAdapter(this, pdfList);
         recyclerView.setAdapter(adapter);
 
-        // Firebase reference
-        databaseReference = FirebaseDatabase.getInstance().getReference("pdf/database/pdfs");
+        // Reference to Firebase "pdf" node
+        databaseReference = FirebaseDatabase.getInstance().getReference("pdf");
 
-        // Fetch data
+        // Load PDFs from Firebase
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 pdfList.clear();
                 for (DataSnapshot dataSnapshot : snapshot.getChildren()) {
                     PDFItem pdfItem = dataSnapshot.getValue(PDFItem.class);
-                    pdfList.add(pdfItem);
+                    if (pdfItem != null) {
+                        pdfList.add(pdfItem);
+                    }
                 }
                 adapter.notifyDataSetChanged();
             }
